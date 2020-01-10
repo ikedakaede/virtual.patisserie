@@ -1,0 +1,433 @@
+@charset "utf-8";
+
+/* ========================================
+    Reset css
+========================================= */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style:normal;
+	font-weight: normal;
+	font-size: 100%;
+    vertical-align: baseline;
+    text-decoration:none;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html{overflow-y: scroll;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+ol, ul{list-style:none;}
+table{border-collapse: collapse; border-spacing:0;}
+caption, th{text-align: left;}
+a:focus {outline:none;}
+
+/* micro clearfix */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
+
+
+
+
+
+
+/* ========================================
+
+========================================= */
+
+body {
+    background: url(image/bg.png);
+}
+
+.wrapper {
+    width: 960px;
+    height: 975px;
+    margin: 0 auto;
+}
+
+.container {
+    height: 670px;
+}
+/* =======================================
+    Header
+========================================= */
+
+header {
+    height: 108px;
+    margin: 35px 0 20px 0;
+    font-family: Copperplate;
+}
+
+.header-top {
+    height: 57px;
+}
+
+.header-top h1 {
+    font-family: Phosphate ;
+    font-size: 41px;
+    color: #53423a;
+    letter-spacing: 5px;
+    line-height: 28px;
+    float: left;
+}
+
+.header-top h1 span {
+    font-family: Copperplate;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+ 
+.top-nav {
+    float: right;
+}
+
+.top-nav li {
+    float:left;
+}
+
+.top-nav a {
+    color: #575757;
+    margin-left: 30px;
+    transition: all 0.3s ;
+    display:block;
+    transition: all 0.3s;
+}
+
+.header-bottom {
+    height: 28px;
+    margin-top: 23px;
+}
+
+.main-nav {
+    float: left;
+    font-size: 18px;
+} 
+
+.main-nav li{
+    float: left;
+}
+
+.main-nav a {
+    color: #463f35;
+    margin-right: 30px;
+    line-height: 45px;
+    transition: all 0.3s;
+}
+
+
+/* header-bottom */
+
+.search {
+    float: right;
+    line-height: 37px;
+}
+
+.icon-search {
+    height: 13px;
+    width: 40px; 
+    float: left;
+    margin:11px 4px 0 0;
+}
+
+
+.form {
+    float: left;
+}
+
+.submit {
+
+    border: none;
+    background-color: #a39e96;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 1px 2px;
+    line-height: 17px;
+    font-size: 1pt;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+
+.top-nav a:hover {
+    opacity:0.6;
+}
+
+.submit:hover {
+    opacity:0.6;
+}
+
+.main-nav a:hover {
+    color:#fff;
+    background-color: #8d7f6b;
+    border-radius: 25px; 
+    padding: 0 8px;
+}
+
+/* ========================================
+    Main-image
+========================================= */
+
+.main {
+    float: left;
+}
+
+.main-image {
+    background-image: url(image/main-image.png);
+    width: 715px;
+    height: 300px;
+    background-repeat: no-repeat;
+    text-align: right;
+}
+
+.main-image h2 {
+    font-family: PT Mono;
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-shadow: 0px 0px 10px #fff;
+    padding: 45px 20px 0 0 ;
+}
+
+.main-image p {
+    font-family: Acumin Variable Concept;
+    font-size: 9px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    padding: 15px 20px 0px 0;
+    display: inline-block;
+}
+
+/* ========================================
+    Contents (na,ai)
+========================================= */
+
+
+.contents {
+    margin-top: 20px; 
+    height: 350px;
+}
+.contents h3 {
+    font-family: Copperplate; 
+    font-size: 18px;
+}
+
+.contents h3 span {
+    color: #a69c63;
+    font-size: 7px; 
+}
+
+.inner {
+    border: 1px solid  #e6e0dd;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 14px;
+}
+
+.item-data {
+    font-family: Apple Symbols;
+    padding-top: 6px;    
+    line-height: 10px;
+    height:26px;
+}
+
+.bland {
+    font-size: 14px;
+    color:#815c48;
+}
+
+.category {
+    font-size: 12px;
+    color: #000000;
+}
+
+.price {
+    font-size: 1px;
+    color: #7d7d7d;
+}
+
+
+/* new-arrivels */
+
+.new-arrivals  {
+    width: 470px;
+    height: 350px;
+    background-color: #fffefc;
+    position: relative;
+    float: left;
+}
+
+.na-in {
+    width: 430px;
+    height: 310px;
+}
+
+.na-item {
+    height: 130px; 
+    padding-right: 21px;
+    padding-top:10px;
+    float: left;
+    transition: all 0.3s;
+}
+
+.na-it-right {
+    padding-right: 0px;
+}
+
+.na-img {
+    width: 91px;
+    height: 97px; 
+}
+
+/* arrival-info */
+
+.arrival-info {
+    width: 225px;
+    height: 350px;
+    background-color: #fffefc;
+    position: relative;
+    float: left;
+    margin-left: 20px;
+}
+
+.ai-in {
+    width: 185px;
+    height: 310px;
+}
+
+.ai-item {
+    height: 130px; 
+    display:block;
+    padding-top:10px;
+    transition: all 0.3s;
+}
+
+.ai-img {
+    height: 97px;
+    padding-left: 1px;
+}
+
+.data-h {
+    float: left;
+} 
+
+.btn {
+    width: 70px;
+    height: 22px;
+    float: right;
+}
+
+.contents a:hover {
+    opacity: 0.6;
+} 
+
+/* ========================================
+    Side
+========================================= */
+.side {
+    width: 225px;
+    height: 670px;
+    float: right;
+}
+
+.side a {
+    display: block;
+    width: 219px;
+    height: 120px;
+    margin-bottom: 10px;
+    border: 3px solid #e9e6e2;
+    transition: all 0.3s;
+}
+
+ .side img {
+    float: left;
+    width: 110px;
+    height : 120px;
+ }
+
+ .side p {
+    font-family: Copperplate;
+    font-size: 15px;
+    color: black;
+    line-height: 120px;
+}
+
+.item-bg {
+    float:left;
+    width: 109px;
+    height : 120px;
+    background-color: #fffefc;
+    text-align:center;
+}
+
+.side a:hover {
+    text-decoration: underline;
+    border: 3px solid #d4cdc4;
+}
+/* ========================================
+    Footer
+========================================= */
+
+footer {
+    height: 130px;
+    text-align: center;
+}
+
+.fa-btn {
+    height: 20px;
+    padding-top: 40px;
+    width: 89px;
+    margin: 0 auto;
+}
+
+.fab {
+    float: left;
+    font-size: 20px;
+}
+
+.fa-instagram {
+    padding-right: 17px;
+    color: #CF2E92; 
+}
+
+.fa-line {
+    padding-right: 17px;
+    color:#00B900;
+}
+
+.fa-twitter {
+    color: #1DA1F2;
+}
+
+.copyright {
+    padding-top: 15px;
+    font-size:10px;
+    color: #99908c;
+    font-family: "小塚ゴシック" Pr6N;
+    letter-spacing: 1.2px;
+}
+
+footer a:hover {
+    opacity:0.7;
+}
