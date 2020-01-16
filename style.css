@@ -1,0 +1,217 @@
+@charset "utf-8";
+
+/* ========================================
+    reset
+========================================= */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style:normal;
+	font-weight: normal;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html{overflow-y: scroll;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+input, textarea,{margin: 0; padding: 0;}
+ol, ul{list-style:none;}
+table{border-collapse: collapse; border-spacing:0;}
+caption, th{text-align: left;}
+a:focus {outline:none;}
+
+/* micro clearfix */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
+
+
+
+
+
+
+/* ========================================
+    layout
+========================================= */
+body {
+    max-width: 1140px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+
+    font-family: "FOT-筑紫B丸ゴシック Std", Savoye LET ;
+    color: #734339;
+}
+a {
+    text-decoration: none;
+}
+
+.clear {
+    clear:both;
+}
+
+/* ========================================
+    header
+========================================= */
+header {
+    width: 1140px;
+    text-align: center;
+
+}
+
+header h1 {
+    margin: 35px;
+}
+
+header h1 a {
+    color: #734339;
+    display: inline-block;
+}
+
+header h1 a img {
+    height: 34px;
+    width: 35px;
+}
+
+header h1 a p {
+    font-size: 55px;
+    height: 30px;
+}
+
+
+header ul {
+    margin-left: 345px;
+}
+
+
+header ul li a {
+    color: #734339;
+    padding: 0 25px;
+    border-right: 1px solid ;
+    font-size: 23px;
+    height: 20px;
+    margin-bottom:35px;
+    float: left;
+
+  
+}
+
+header ul li a.contact {
+    border: none;
+}
+
+/* ========================================
+    mainimage
+========================================= */
+.main-image {
+    background-image: url(image/メイン画像.png);
+    background-size: cover;
+    height: 410px;
+}
+
+/* ========================================
+    left
+========================================= */
+.left {
+    margin: 30px 0 30px 60px;
+    height: 350px;
+    width: 600px;
+    float: left;
+}
+
+.left  h2 {
+    font-size: 40px;
+}
+
+.news-list {
+    line-height: 60px;
+    height: 60px;
+    border-bottom: 1px dashed #b59494;
+}
+
+.news-list dt {
+    float: left;
+    clear: left;
+    color: #afa9a9;
+
+    text-decoration: line;
+}
+
+.news-list dd {
+    float: left;
+    margin-left: 20px;
+    color: #837c7d;
+    font-size: 12px;
+}
+
+
+/* ========================================
+    right
+========================================= */
+.right {
+    margin: 30px 0 30px 40px;
+    height: 350px;
+    width: 401px;
+    float: left;
+}
+
+.right h2 {
+    font-size: 40px;
+}
+
+.item-wrapper {
+    width: 401px;
+    height: 400px;
+}
+
+.item-wrapper a {
+    display:inline-block;
+    height: 127px;
+}
+
+.item-wrapper img { 
+    width: 127px;
+    height: 127px;
+    padding:none;
+    margin: none;
+    margin: 0 2px;
+}
+
+.item-wrapper a:hover {
+    opacity: 0.6;
+}
+
+/* ========================================
+    footer
+========================================= */
+
+footer {
+    background-color: #f3f5f9;
+    color: #9f9797;
+    text-align: center;
+    font-family: apple symbols;
+    font-weight: lighter;
+    line-height: 90px;
+    margin-top: 30px;
+}
